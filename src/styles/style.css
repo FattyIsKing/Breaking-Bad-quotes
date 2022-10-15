@@ -179,10 +179,9 @@ h3{
         height: 100%;
     }
     .right_half{
-        transform: translateX(100%);
         position: fixed;
+        display: none;
         transition: 1s;
-        z-index: 2;
         background-color: white;
         gap: 7px;
     }
