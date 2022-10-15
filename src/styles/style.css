@@ -180,7 +180,7 @@ h3{
     }
     .right_half{
         transform: translateX(100%);
-        position: fixed;
+        position: absolute;
         transition: 1s;
         z-index: 2;
         background-color: white;
