@@ -19,7 +19,6 @@
 body{
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
 }
 
 .wrapper{
@@ -28,6 +27,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    overflow: hidden;
 }
 
 .right_half{
@@ -38,6 +38,7 @@ body{
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+    overflow: hidden;
 }
 
 
