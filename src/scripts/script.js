@@ -1,15 +1,27 @@
-
 const add = document.querySelector(".add");
-const right = document.querySelector(".right_half");
-const tip = document.querySelector(".tip");
+const right = document.createElement("div");
+const tip = document.createElement("div");
+const returnButton = document.createElement("button");
+
+returnButton.classList.add("return");
+returnButton.textContent = "Return";
+tip.classList.add("tip");
+right.classList.add("right_half");
+tip.innerHTML = "Here will be your quotes";
+
 let wrapper = document.querySelector(".wrapper");
 let wrapperWidth = wrapper.offsetWidth;
 
+right.appendChild(tip);
+right.appendChild(returnButton);
+wrapper.appendChild(right);
 
+console.log(wrapperWidth);
 let checker = 0;
 
 function appear(){
     if(wrapperWidth > 700){
+        console.log(wrapperWidth);
         if(checker < 5){
             checker += 1;
             const api_BB_url = 'https://breakingbadapi.com/api/quotes';
@@ -18,7 +30,8 @@ function appear(){
             const authorWeb = document.createElement("div");
             const quoteWeb = document.createElement("div");
             const deleteBtn = document.createElement("button");
-    
+
+            
             box.classList.add("box");
             authorWeb.classList.add("authorWeb");
             quoteWeb.classList.add("quoteWeb");
