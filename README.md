@@ -1,1 +1,1 @@
-#Link: [GrubyIsKing.pl/bb](GrubyIsKing.pl/bb)
+#Link: [GrubyIsKing.pl/bb](https://GrubyIsKing.pl/bb)
